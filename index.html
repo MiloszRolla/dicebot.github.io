@@ -1,1 +1,93 @@
-Hello World
+<DOCTYPE html>
+    <html>
+        <head>
+            <style>
+           li{
+              font-size: 24px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              padding-left: 5px;
+              display: inline;
+           }
+           .diceDrop{
+               opacity: 0;
+           }
+           .hidden{
+               opacity: 0;
+           }
+            </style>
+            <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="mainJs/script.js"></script>
+        </head>
+            <body class="bg-gradient-to-b from-purple-500 via-blue-500 to-pink-300">
+                
+                <span class="block h-20 w-full bg-purple-700" >
+                    <h1 class="pt-4 pl-10 font-bold md:text-center text-4xl text-white">Dice app</h1>
+                </span>
+                    <div class="mt-2 grid grid-flow-col grid-cols-2 grid-rows-1 gap-7">
+                        <button id="show" class="h-20 w-a p-4 rounded-full py-3 px-6 content-center md:bg-gradient-to-r from-yellow-500 to-blue-500">
+                            <h1 class="text-white text-2xl font-bold md:text-center">Pokaż</h1>
+                        </button>
+                        
+                        <button id="hide" class="h-20 w-a p-4 rounded-full py-3 px-6 content-center md:bg-gradient-to-r from-yellow-500 to-blue-500">
+                            <h1 class="text-white text-2xl font-bold md:text-center">Ukryj</h1>
+                        </button>
+                    </div>
+
+                    <div class="diceDrop mt-4 ml-2 mr-2 grid grid-flow-col auto-cols-5 grid-rows-1 gap-7">
+
+                    <button class="h-20 w-a p-4 rounded-full py-3 px-6 content-center md:bg-gradient-to-r from-red-500 to-pink-500
+                    hover:from-green-400 hover:to-blue-500"" id="dice100">
+                        <p class="text-white text-2xl font-bold md:text-center">K-100</p>
+                    </button>
+                    
+                    <button class="h-20 w-a p-4 rounded-full py-3 px-6 content-center md:bg-gradient-to-r from-red-500 to-pink-500
+                    hover:from-green-400 hover:to-blue-500"" id="dice20">
+                        <p class="text-white text-2xl font-bold md:text-center">K-20</p>
+                    </button>
+
+                    <button class="h-20 w-a p-4 rounded-full py-3 px-6 content-center md:bg-gradient-to-r from-red-500 to-pink-500
+                    hover:from-green-400 hover:to-blue-500"" id="dice10">
+                        <p class="text-white text-2xl font-bold md:text-center">K-10</p>
+                    </button>
+
+                    <button class="h-20 w-a p-4 rounded-full py-3 px-6 content-center md:bg-gradient-to-r from-red-500 to-pink-500
+                    hover:from-green-400 hover:to-blue-500"" id="dice6">
+                        <p class="text-white text-2xl font-bold md:text-center">K-6</p>
+                    </button>
+                    
+
+                    <button class="h-20 w-a p-4 rounded-full py-3 px-6 content-center md:bg-gradient-to-r from-red-500 to-pink-500
+                    hover:from-green-400 hover:to-blue-500"" id="dice3">
+                        <p class="text-white text-2xl font-bold md:text-center">K-3</p>
+                    </button>
+                </div>
+                    
+                <div class="diceDrop grid grid-flow-col grid-cols-5 grid-rows-10 gap-4">
+                    
+                    <ul id="d100">
+                        <li class="mt-5 text-2xl font-bold ">Wyrzucono: </li>
+                    </ul>
+
+                    <ul id="d20">
+                        <li class="mt-5 text-2xl font-bold ">Wyrzucono: </li>
+                    </ul>
+
+                    <ul id="d10">
+                        <li class="mt-5 text-2xl font-bold ">Wyrzucono: </li>
+                    </ul>
+
+                    <ul id="d6">
+                        <li class="mt-5 text-2xl font-bold ">Wyrzucono: </li>
+                    </ul>
+
+                    <ul id="d3">
+                        <li class="mt-5 text-2xl font-bold ">Wyrzucono: </li>
+                    </ul>
+                </div>
+            
+                
+
+            </body>
+    </html>
+
